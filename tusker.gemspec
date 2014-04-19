@@ -6,11 +6,11 @@ require 'tusker/version'
 Gem::Specification.new do |spec|
   spec.name          = "tusker"
   spec.version       = Tusker::VERSION
-  spec.authors       = ["Nathaniel Watts"]
-  spec.email         = ["reg@nathanielwatts.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.authors       = "Nathaniel Watts"
+  spec.email         = "reg@nathanielwatts.com"
+  spec.summary       = "Command line interface to use Evernote"
+  spec.description   = "Tusker is a command line interface to create notes with Evernote."
+  spec.homepage      = "http://github.com/thewatts/tusker"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")

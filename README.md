@@ -1,6 +1,6 @@
 # Tusker
 
-TODO: Write a gem description
+A command line interface to connect with and use Evernote.
 
 ## Installation
 

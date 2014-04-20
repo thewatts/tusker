@@ -16,9 +16,27 @@ Or install it yourself as:
 
     $ gem install tusker
 
+## Setup
+
+### Current Caveats
+
+- Has only been run on `ruby 2.1.1`.
+- Works on a Mac, and I presume Linux, machine.
+- Only works with sandboxed developer tokens.
+    - You can obtain one from here: [https://sandbox.evernote.com/api/DeveloperToken.action](https://sandbox.evernote.com/api/DeveloperToken.action)
+- Much lacking, so alpha.
+
 ## Usage
 
-Currently this does nothing! :)
+### To list Notebooks:
+```
+# in irb, pry, etc
+
+> require 'tusker'
+> Tusker.add_token(developer_token)
+> Tusker.notebooks
+# ===> ["thewatts' notebook"]
+```
 
 ## Contributing
 

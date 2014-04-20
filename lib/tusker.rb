@@ -8,5 +8,15 @@ rescue
 end
 
 module Tusker
-  # Your code goes here...
+
+  def self.add_token(token)
+    Config.write(token)
+  end
+
+  def self.notebooks
+    token  = Config.read.token
+    client = Client.new(token: token)
+    client.note_store.listNotebooks.map { |notebook| notebook.name }
+  end
+
 end

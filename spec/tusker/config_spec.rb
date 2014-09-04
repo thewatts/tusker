@@ -2,7 +2,6 @@ require 'spec_helper'
 
 module Tusker
   describe Config do
-
     describe "::read" do
       before do
         store = YAML::Store.new(stub_file)
@@ -31,8 +30,9 @@ module Tusker
     end
 
     it "uses the default path when not initialized with a path" do
+      path   = File.expand_path('~')
       config = Tusker::Config.new
-      expect(config.path).to eq '~'
+      expect(config.path).to eq path
     end
 
     def stub_file

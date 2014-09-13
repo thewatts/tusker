@@ -3,7 +3,6 @@ require 'yaml/store'
 
 module Tusker
   class Config
-
     def self.read(path = nil)
       new(path)
     end
@@ -22,7 +21,7 @@ module Tusker
     end
 
     def default_path
-      File.expand_path('~')
+      File.expand_path('~/.tusker')
     end
 
     def save
@@ -46,7 +45,7 @@ module Tusker
     end
 
     def filename
-      '.tusker'
+      '.tusker-config'
     end
 
     def find_or_create_file
